@@ -1,0 +1,23 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('helping_lists', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('page_url');
+            $table->string('functional_video_url');
+            $table->string('technical_video_url');
+            $table->string('sql_query_url');
+            $table->string('status');
+            $table->string('help_text');
+            $table->timestamps();
+        });
+    }
+};

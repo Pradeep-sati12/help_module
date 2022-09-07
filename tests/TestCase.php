@@ -2,9 +2,9 @@
 
 namespace HelpModule\HelpModule\Tests;
 
+use HelpModule\HelpModule\HelpModuleServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use HelpModule\HelpModule\HelpModuleServiceProvider;
 
 class TestCase extends Orchestra
 {

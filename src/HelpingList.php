@@ -2,12 +2,11 @@
 
 namespace HelpModule\HelpModule;
 
-
 use Illuminate\Database\Eloquent\Model;
 
 class HelpingList extends Model
 {
-   use \Backpack\CRUD\app\Models\Traits\CrudTrait;
+    use \Backpack\CRUD\app\Models\Traits\CrudTrait;
 
     /*
     |--------------------------------------------------------------------------
@@ -16,10 +15,11 @@ class HelpingList extends Model
     */
 
     protected $table = 'helping_lists';
+
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    
+
     // protected $hidden = [];
     // protected $dates = [];
 
